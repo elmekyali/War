@@ -3,7 +3,7 @@ package com.sqli.nespresso.war.kingdom.countries;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CitiesBuilder {
+public class CitiesParser {
     public List<City> build(String... cityComponents) {
         int index = 0;
         List<City> cities = new ArrayList<>();

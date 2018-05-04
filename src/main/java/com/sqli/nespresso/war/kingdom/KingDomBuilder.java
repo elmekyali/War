@@ -1,6 +1,6 @@
 package com.sqli.nespresso.war.kingdom;
 
-import com.sqli.nespresso.war.kingdom.countries.CitiesBuilder;
+import com.sqli.nespresso.war.kingdom.countries.CitiesParser;
 import com.sqli.nespresso.war.kingdom.countries.Country;
 
 import java.util.*;
@@ -17,8 +17,8 @@ public class KingDomBuilder {
     }
 
     public KingDomBuilder addCountry(String country, String... cityComponent) {
-        CitiesBuilder citiesBuilder = new CitiesBuilder();
-        Country newCountry = new Country(country, citiesBuilder.build(cityComponent));
+        CitiesParser citiesParser = new CitiesParser();
+        Country newCountry = new Country(country, citiesParser.build(cityComponent));
         this.countryList.add(newCountry);
         return this;
     }
