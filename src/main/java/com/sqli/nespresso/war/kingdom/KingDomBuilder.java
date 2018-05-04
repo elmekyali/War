@@ -18,7 +18,7 @@ public class KingDomBuilder {
 
     public KingDomBuilder addCountry(String country, String... cityComponent) {
         CitiesParser citiesParser = new CitiesParser();
-        Country newCountry = new Country(country, citiesParser.build(cityComponent));
+        Country newCountry = new Country(country, citiesParser.parse(cityComponent));
         this.countryList.add(newCountry);
         return this;
     }

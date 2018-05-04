@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CitiesParser {
-    public List<City> build(String... cityComponents) {
+    public List<City> parse(String... cityComponents) {
         int index = 0;
         List<City> cities = new ArrayList<>();
         while (index < cityComponents.length) {
